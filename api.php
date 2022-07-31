@@ -6,20 +6,6 @@ require_once('model/news.php');
 if (!headers_sent()) {
     header('Access-Control-Allow-Origin: *');
 }
-/*$http_origin = $_SERVER['HTTP_ORIGIN'];
-$allowed_domains = array(
-    'http://localhost:3000',
-    'http://192.168.31.248:3000',
-    'http://192.168.31.1:3000',
-    'http://192.168.31.248',
-    'http://192.168.31.1',
-//    'http://172.22.16.1:3000',
-    'http://62.217.176.86:3000'
-);
-if (in_array($http_origin, $allowed_domains))
-{
-    header("Access-Control-Allow-Origin: $http_origin");
-}*/
 $dbConn = new DataBaseConnection();
 $form = new Form($dbConn->dbConn);
 $news = new News($dbConn->dbConn);
