@@ -8,6 +8,5 @@ class Form{
     public function addFormData($name,$adress,$email,$number){
         $query = "INSERT INTO `form` (`name`, `adress`, `email`, `number`) VALUES ('$name', '$adress', '$email', '$number')";
         return checkErrInsertInto($this->db->query($query));
-
     }
 }

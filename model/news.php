@@ -9,4 +9,5 @@ class News{
         $result = mysqli_query($this->db, $query);
         return $result;
     }
+
 }

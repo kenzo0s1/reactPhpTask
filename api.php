@@ -22,8 +22,6 @@ if(isset($addPost)){
         }else{
             echo 'false';
         }
-       ;
-//        echo 'true';
     }else{
         echo 'false';
        echo $addPost;
@@ -37,9 +35,8 @@ if(isset($getPosts)) {
     if ($res->num_rows > 0) {
         while ($row = $res->fetch_assoc()) {
             $arr[] = $row;
-//        echo json_encode($arr);
+
         }
     }
     echo json_encode($arr);
 }
-//$form->getPostById('1','1','1','1');
